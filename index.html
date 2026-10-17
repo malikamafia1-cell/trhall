@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ترحال | طلب عربة</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🚘 ترحال</h1>
+        <p>مشوارك علينا، والراحة ليك</p>
+    </header>
+
+    <nav>
+        <a href="#home">الرئيسية</a>
+        <a href="#booking">اطلب عربة</a>
+        <a href="#about">عن ترحال</a>
+    </nav>
+
+    <section class="hero" id="home">
+        <h2>أهلاً بك في ترحال</h2>
+
+        <p>
+            اطلب عربتك بسهولة وحدد موقعك ووجهتك.
+        </p>
+
+        <a href="#booking" class="btn">
+            اطلب عربة الآن
+        </a>
+    </section>
+
+    <section class="booking" id="booking">
+
+        <h2>🚕 احجز مشوارك</h2>
+
+        <form id="bookingForm">
+
+            <label for="name">الاسم الكامل</label>
+            <input
+                type="text"
+                id="name"
+                placeholder="أدخل اسمك"
+                required
+            >
+
+            <label for="phone">رقم الهاتف</label>
+            <input
+                type="tel"
+                id="phone"
+                placeholder="أدخل رقم هاتفك"
+                required
+            >
+
+            <label for="pickup">موقع الانطلاق</label>
+            <input
+                type="text"
+                id="pickup"
+                placeholder="مثلاً: أم درمان"
+                required
+            >
+
+            <label for="destination">الوجهة</label>
+            <input
+                type="text"
+                id="destination"
+                placeholder="إلى أين تريد الذهاب؟"
+                required
+            >
+
+            <label for="carType">نوع العربة</label>
+
+            <select id="carType" required>
+                <option value="">اختر نوع العربة</option>
+                <option value="صالون">صالون</option>
+                <option value="دبل كاب">دبل كاب</option>
+                <option value="عربة عائلية">عربة عائلية</option>
+            </select>
+
+            <label for="time">موعد الرحلة</label>
+
+            <select id="time">
+                <option value="الآن">الآن</option>
+                <option value="بعد 30 دقيقة">بعد 30 دقيقة</option>
+                <option value="لاحقاً">لاحقاً</option>
+            </select>
+
+            <button type="submit">
+                تأكيد طلب الترحال
+            </button>
+
+        </form>
+
+        <div id="result"></div>
+
+    </section>
+
+    <section class="about" id="about">
+        <h2>عن ترحال</h2>
+
+        <p>
+            ترحال منصة لتسهيل طلب العربات والوصول إلى وجهتك
+            بكل سهولة.
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 ترحال - جميع الحقوق محفوظة</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
